@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "524466213156",
+    "project_id": "nithitracker-8ff67",
+    "storage_bucket": "nithitracker-8ff67.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524466213156:android:ac574ef582980798cf63b1",
+        "android_client_info": {
+          "package_name": "com.example.nithi_tracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrRl-XHG8X0OT36WACubvTsaG9WoN9vkU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
