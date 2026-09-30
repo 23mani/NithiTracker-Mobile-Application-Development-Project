@@ -12,7 +12,20 @@
           "package_name": "com.example.nithi_tracker"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "524466213156-esaq111eftvqkkq5tgiu2s93hio9veh7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nithi_tracker",
+            "certificate_hash": "b19c7e27345864a053f46db961a82f48c0802309"
+          }
+        },
+        {
+          "client_id": "524466213156-gm1ftqjhtmmci3mqjnsbh55bqr1ns4g5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDrRl-XHG8X0OT36WACubvTsaG9WoN9vkU"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "524466213156-gm1ftqjhtmmci3mqjnsbh55bqr1ns4g5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
