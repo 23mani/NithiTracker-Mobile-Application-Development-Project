@@ -74,11 +74,9 @@ class _LoginScreenState extends State<LoginScreen> {
           _isLoading = false;
         });
 
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Google Sign-In failed: $e'),
-          ),
-        );
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(SnackBar(content: Text('Google Sign-In failed: $e')));
       }
     }
   }
@@ -96,10 +94,7 @@ class _LoginScreenState extends State<LoginScreen> {
     try {
       // Start Facebook Login
       final LoginResult result = await FacebookAuth.instance.login(
-        permissions: const [
-          'email',
-          'public_profile',
-        ],
+        permissions: const ['email', 'public_profile'],
       );
 
       // User cancelled Facebook login
@@ -143,11 +138,9 @@ class _LoginScreenState extends State<LoginScreen> {
           _isLoading = false;
         });
 
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Facebook Sign-In failed: $e'),
-          ),
-        );
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(SnackBar(content: Text('Facebook Sign-In failed: $e')));
       }
     }
   }
@@ -182,9 +175,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   // ------------------------------------------------
                   // LOGO
                   // ------------------------------------------------
-                  const Center(
-                    child: NithiLogo(size: 90),
-                  ),
+                  const Center(child: NithiLogo(size: 90)),
                   const SizedBox(height: 50),
 
                   // ------------------------------------------------
@@ -202,9 +193,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   const SizedBox(height: 8),
                   Text(
                     'Login to continue tracking.',
-                    style: GoogleFonts.plusJakartaSans(
-                      color: Colors.grey[400],
-                    ),
+                    style: GoogleFonts.plusJakartaSans(color: Colors.grey[400]),
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 40),
@@ -367,11 +356,7 @@ class _LoginScreenState extends State<LoginScreen> {
   // ============================================================
   // SOCIAL BUTTON
   // ============================================================
-  Widget _socialButton(
-    IconData icon,
-    String label,
-    VoidCallback onPressed,
-  ) {
+  Widget _socialButton(IconData icon, String label, VoidCallback onPressed) {
     return OutlinedButton.icon(
       onPressed: _isLoading ? null : onPressed,
       icon: Icon(icon, color: Colors.white),
@@ -382,9 +367,7 @@ class _LoginScreenState extends State<LoginScreen> {
       style: OutlinedButton.styleFrom(
         padding: const EdgeInsets.symmetric(vertical: 16),
         side: BorderSide(color: Colors.grey[800]!),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       ),
     );
   }
