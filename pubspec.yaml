@@ -38,7 +38,8 @@ dependencies:
   cloud_firestore: ^6.10.0
   image_picker: ^1.0.4 # For Scan Receipt
   google_mlkit_text_recognition: ^0.11.0 # For OCR
-
+  google_sign_in: ^6.2.1
+  flutter_facebook_auth: ^6.0.4
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
