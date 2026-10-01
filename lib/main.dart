@@ -9,9 +9,10 @@ import 'screens/profile_screen.dart';
 import 'screens/ai_insights_screen.dart';
 import 'screens/scan_receipt_screen.dart';
 import 'utils/page_transitions.dart'; // Import the transition
-
+import 'package:firebase_core/firebase_core.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const NithiTrackerApp());
 }
 
