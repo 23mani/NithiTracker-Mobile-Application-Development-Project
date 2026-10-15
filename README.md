@@ -18,7 +18,7 @@ Cross-platform finance tracker for Android and Web.
 
 ## Setup
 \`\`\`bash
-git clone <repo-url>
+git clone <https://github.com/23mani/NithiTracker-Mobile-Application-Development-Project>
 cd NithiTracker
 flutter pub get
 flutter run -d chrome --dart-define=ML_API_BASE=https://your-ngrok-url
@@ -34,4 +34,4 @@ flutter build web --release
 ## Team
 - Member 1 — Frontend, Auth, Firestore
 - Member 2 — Backend, ML
-- Member 3 — ...
+- Member 3 — digital image processing ,testing
